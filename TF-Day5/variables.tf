@@ -40,12 +40,6 @@ variable "database_username" {
   default     = "platformadmin"
 }
 
-variable "container_image" {
-  description = "Container image used by the application instances"
-  type        = string
-  default     = "docker.io/library/nginx:latest"
-}
-
 variable "health_check_path" {
   description = "HTTP path used by the load balancer target health check"
   type        = string
